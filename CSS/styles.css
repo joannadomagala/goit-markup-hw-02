@@ -1,0 +1,31 @@
+body {
+  font-family: "roboto", sans-serif;
+}
+ul.filter li {
+  list-style: none;
+}
+button {
+  background-color: #f5f4fa;
+  font-weight: 500;
+  color: #212121;
+  border: none;
+  cursor: pointer;
+}
+button:hover {
+  background-color: rgba(33, 150, 243, 1);
+}
+a:hover,
+a:focus {
+  color: rgba(33, 33, 33, 1);
+  color: rgba(33, 150, 243, 1);
+  font-weight: 500;
+}
+strong {
+  color: #212121;
+  font-weight: 700;
+}
+ul.pictures li {
+  color: #757575;
+  line-height: 13, 33;
+  list-style-type: none;
+}
