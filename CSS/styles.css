@@ -4,6 +4,14 @@ body {
 ul.filter li {
   list-style: none;
 }
+img:hover {
+  border: 2px solid rgba(33, 150, 243, 1);
+}
+li:hover {
+  text-decoration: underline;
+  text-decoration-color: rgba(33, 150, 243, 1);
+  text-decoration-thickness: 2px;
+}
 button {
   background-color: #f5f4fa;
   font-weight: 500;
@@ -29,6 +37,6 @@ strong {
 }
 ul.pictures li {
   color: #757575;
-  line-height: 13.33;
+  line-height: 2;
   list-style-type: none;
 }
