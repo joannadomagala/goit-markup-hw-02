@@ -4,6 +4,30 @@ body {
 ul.filter li {
   list-style: none;
 }
+ul.pictures {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+ul.pictures li {
+  width: 33.33%;
+  box-sizing: border-box;
+  padding: 10px;
+  text-align: center;
+}
+
+ul.pictures li img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+ul.pictures li strong {
+  display: block;
+  margin: 10px 0;
+}
+
 img:hover {
   border: 2px solid rgba(33, 150, 243, 1);
 }
@@ -18,6 +42,24 @@ button {
   color: #212121;
   border: none;
   cursor: pointer;
+}
+.filter {
+  display: flex;
+  justify-content: center; /* wyśrodkowanie w poziomie */
+  align-items: center; /* wyśrodkowanie w pionie */
+}
+
+.filter li {
+  margin-right: 10px; /* dodatkowa przestrzeń między przyciskami */
+}
+
+.filter button {
+  background-color: #f5f4fa;
+  font-weight: 500;
+  color: #212121;
+  border: none;
+  cursor: pointer;
+  padding: 10px 20px; /* dodatkowy padding dla przycisków */
 }
 button:hover {
   background-color: rgba(33, 150, 243, 1);
