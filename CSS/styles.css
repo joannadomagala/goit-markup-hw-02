@@ -4,7 +4,31 @@
   --focus-color: rgba(33, 150, 243, 1);
   --large-font-color: rgba(33, 33, 33, 1);
   --small-font-color: rgba(117, 117, 117, 1);
+  --large-font-weight: 700;
+  --medium-font-weight: 500;
 }
+/* header */
+a:link {
+  text-decoration: none;
+  color: inherit;
+  cursor: default;
+}
+.navigation {
+  font-weight: var(--medium-font-weight);
+  color: inherit;
+  list-style: none;
+}
+.kontakt {
+  color: var(--small-font-color);
+  list-style: none;
+}
+a:hover {
+  color: var(--hover-color);
+}
+a:focus {
+  color: var(--focus-color);
+}
+/* main */
 body {
   font-family: "roboto", sans-serif;
 }
@@ -14,14 +38,14 @@ body {
 button {
   background-color: var(--button-color);
   border: none;
-  font-weight: 500;
+  font-weight: var(--medium-font-weight);
   cursor: pointer;
 }
 .brand-pictures {
   list-style: none;
 }
 .large-font {
-  font-weight: 700;
+  font-weight: var(--large-font-weight);
   color: var(--large-font-color);
   line-height: 2;
 }
@@ -29,16 +53,23 @@ button {
   color: var(--small-font-color);
   line-height: 1.87;
 }
-button:hover,
-a:hover {
+button:hover {
   background-color: var(--hover-color);
   color: rgba(255, 255, 255, 1);
 }
-button:focus,
-a:focus {
+button:focus {
   background-color: var(--focus-color);
   color: rgba(255, 255, 255, 1);
 }
-a {
-  cursor: default;
+
+/* stylowanie dla index */
+.task-list {
+  list-style: none;
+}
+.crew {
+  list-style: none;
+}
+h2 {
+  font-weight: var(--large-font-weight);
+  color: var(--large-font-color);
 }
