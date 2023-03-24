@@ -14,7 +14,7 @@
 .logo {
   font-family: var(--font-family-Raleway);
   line-height: 1.19;
-  letter-spacing: 0.78px;
+  letter-spacing: 0.04875em;
 }
 
 a:link {
@@ -23,19 +23,18 @@ a:link {
   color: var(--font-color-small);
   cursor: default;
   line-height: 1.14;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.0175em;
 }
 .navigation,
 a:visited {
-  font-weight: var (--font-weight-medium);
-  font-family: inherit;
+  font-weight: var(--font-weight-medium);
   color: var(--font-color-large);
   list-style: none;
   line-height: 2;
-  letter-spacing: 0.28px;
+  letter-spacing: 0.0175em;
 }
 .kontakt {
-  color: var(--font-color-small-);
+  color: var(--font-color-small);
   list-style: none;
   font-family: inherit;
 }
@@ -62,7 +61,7 @@ button {
   cursor: pointer;
   line-height: 1.625;
   margin-bottom: 8px;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.03em;
 }
 .brand-pictures {
   list-style: none;
@@ -72,14 +71,14 @@ button {
   font-family: inherit;
   color: var(--font-color-large);
   line-height: 2;
-  letter-spacing: 0.54px;
+  letter-spacing: 0.03375em;
 }
 .small-font {
   color: var(--font-color-small);
   font-weight: var(--font-weight-small);
   font-family: inherit;
   line-height: 1.87;
-  letter-spacing: 0.48px;
+  letter-spacing: 0.03em;
 }
 button:hover {
   background-color: var(--hover-color);
@@ -96,7 +95,7 @@ h1 {
   font-weight: var(--font-weight-super-large);
   text-align: center;
   line-height: 1.36;
-  letter-spacing: 2.64px;
+  letter-spacing: 0.165em;
 }
 .home-list {
   list-style: none;
@@ -111,10 +110,11 @@ h2 {
   font-weight: var(--font-weight-large);
   font-family: inherit;
   color: var(--font-color-large);
+  letter-spacing: 0.02625em;
 }
 address {
   font-style: normal;
   font-family: inherit;
   line-height: 1.71;
-  letter-spacing: 0.42px;
+  letter-spacing: 0.02625em;
 }
