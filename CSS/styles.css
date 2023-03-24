@@ -2,7 +2,7 @@
   --button-color: rgba(245, 244, 250, 1);
   --hover-color: rgba(33, 150, 243, 1);
   --focus-color: rgba(33, 150, 243, 1);
-  --font-color-large: rgba(33, 33, 33, 1);
+  --font-color-basic: rgba(33, 33, 33, 1);
   --font-color-small: rgba(117, 117, 117, 1);
   --font-weight-super-large: 900;
   --font-weight-large: 700;
@@ -28,7 +28,7 @@ a:link {
 .navigation,
 a:visited {
   font-weight: var(--font-weight-medium);
-  color: var(--font-color-large);
+  color: inherit;
   list-style: none;
   line-height: 2;
   letter-spacing: 0.0175em;
@@ -48,6 +48,7 @@ a:focus {
 /* main */
 body {
   font-family: "roboto", sans-serif;
+  color: var(--font-color-basic);
 }
 .filter {
   list-style: none;
@@ -69,7 +70,6 @@ button {
 .large-font {
   font-weight: var(--font-weight-large);
   font-family: inherit;
-  color: var(--font-color-large);
   line-height: 2;
   letter-spacing: 0.03375em;
 }
@@ -109,7 +109,6 @@ h1 {
 h2 {
   font-weight: var(--font-weight-large);
   font-family: inherit;
-  color: var(--font-color-large);
   letter-spacing: 0.02625em;
 }
 address {
