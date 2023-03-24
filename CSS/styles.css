@@ -8,15 +8,15 @@
   --font-weight-large: 700;
   --font-weight-medium: 500;
   --font-weight-small: 400;
-  --font-family-Raleway: Raleway, sans-serif;
+  --font-family-Logo1: Raleway, sans-serif;
+  --font-family-Logo2: Oleo Script, sans-serif;
 }
 /* header */
 .logo {
-  font-family: var(--font-family-Raleway);
+  font-family: var(--font-family-Logo1);
   line-height: 1.19;
   letter-spacing: 0.04875em;
 }
-
 a:link {
   text-decoration: none;
   font-weight: var(--font-weight-medium);
@@ -36,6 +36,8 @@ a:visited {
   color: var(--font-color-small);
   list-style: none;
   font-family: inherit;
+  line-height: 1.17;
+  letter-spacing: 0.0175em;
 }
 a:hover {
   color: var(--hover-color);
