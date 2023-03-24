@@ -4,6 +4,7 @@
   --focus-color: rgba(33, 150, 243, 1);
   --font-color-large: rgba(33, 33, 33, 1);
   --font-color-small: rgba(117, 117, 117, 1);
+  --font-weight-super-large: 900;
   --font-weight-large: 700;
   --font-weight-medium: 500;
   --font-weight-small: 400;
@@ -12,29 +13,31 @@
 /* header */
 .logo {
   font-family: var(--font-family-Raleway);
-  letter-spacing: 3%;
   line-height: 1.19;
+  letter-spacing: 0.78px;
 }
+
 a:link {
   text-decoration: none;
   font-weight: var(--font-weight-medium);
   color: var(--font-color-small);
   cursor: default;
   line-height: 1.14;
-  letter-spacing: 2%;
+  letter-spacing: 0.28px;
 }
 .navigation,
 a:visited {
   font-weight: var (--font-weight-medium);
-  font-family: var(--font-family-Roboto);
+  font-family: inherit;
   color: var(--font-color-large);
   list-style: none;
   line-height: 2;
-  letter-spacing: 2%;
+  letter-spacing: 0.28px;
 }
 .kontakt {
   color: var(--font-color-small-);
   list-style: none;
+  font-family: inherit;
 }
 a:hover {
   color: var(--hover-color);
@@ -49,31 +52,34 @@ body {
 }
 .filter {
   list-style: none;
-  font-family: var(--font-family-Roboto);
+  font-family: inherit;
 }
 button {
   background-color: var(--button-color);
+  font-family: inherit;
   border: none;
   font-weight: var(--font-weight-medium);
   cursor: pointer;
   line-height: 1.625;
   margin-bottom: 8px;
-  letter-spacing: 3%;
+  letter-spacing: 0.48px;
 }
 .brand-pictures {
   list-style: none;
 }
 .large-font {
   font-weight: var(--font-weight-large);
+  font-family: inherit;
   color: var(--font-color-large);
   line-height: 2;
-  letter-spacing: 6%;
+  letter-spacing: 0.54px;
 }
 .small-font {
   color: var(--font-color-small);
   font-weight: var(--font-weight-small);
+  font-family: inherit;
   line-height: 1.87;
-  letter-spacing: 3%;
+  letter-spacing: 0.48px;
 }
 button:hover {
   background-color: var(--hover-color);
@@ -85,6 +91,16 @@ button:focus {
 }
 
 /* stylowanie dla index */
+h1 {
+  font-family: inherit;
+  font-weight: var(--font-weight-super-large);
+  text-align: center;
+  line-height: 1.36;
+  letter-spacing: 2.64px;
+}
+.home-list {
+  list-style: none;
+}
 .task-list {
   list-style: none;
 }
@@ -93,9 +109,12 @@ button:focus {
 }
 h2 {
   font-weight: var(--font-weight-large);
+  font-family: inherit;
   color: var(--font-color-large);
 }
 address {
   font-style: normal;
+  font-family: inherit;
   line-height: 1.71;
+  letter-spacing: 0.42px;
 }
