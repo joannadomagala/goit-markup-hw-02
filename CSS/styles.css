@@ -1,84 +1,44 @@
+:root {
+  --button-color: rgba(245, 244, 250, 1);
+  --hover-color: rgba(33, 150, 243, 1);
+  --focus-color: rgba(33, 150, 243, 1);
+  --large-font-color: rgba(33, 33, 33, 1);
+  --small-font-color: rgba(117, 117, 117, 1);
+}
 body {
   font-family: "roboto", sans-serif;
 }
-ul.filter li {
+.filter {
   list-style: none;
 }
-ul.pictures {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-ul.pictures li {
-  width: 33.33%;
-  box-sizing: border-box;
-  padding: 10px;
-  text-align: center;
-}
-
-ul.pictures li img {
-  display: block;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
-}
-
-ul.pictures li strong {
-  display: block;
-  margin: 10px 0;
-}
-
-img:hover {
-  border: 2px solid rgba(33, 150, 243, 1);
-}
-li:hover {
-  text-decoration: underline;
-  text-decoration-color: rgba(33, 150, 243, 1);
-  text-decoration-thickness: 2px;
-}
 button {
-  background-color: #f5f4fa;
-  font-weight: 500;
-  color: #212121;
+  background-color: var(--button-color);
   border: none;
+  font-weight: 500;
   cursor: pointer;
 }
-.filter {
-  display: flex;
-  justify-content: center; /* wyśrodkowanie w poziomie */
-  align-items: center; /* wyśrodkowanie w pionie */
+.brand-pictures {
+  list-style: none;
 }
-
-.filter li {
-  margin-right: 10px; /* dodatkowa przestrzeń między przyciskami */
-}
-
-.filter button {
-  background-color: #f5f4fa;
-  font-weight: 500;
-  color: #212121;
-  border: none;
-  cursor: pointer;
-  padding: 10px 20px; /* dodatkowy padding dla przycisków */
-}
-button:hover {
-  background-color: rgba(33, 150, 243, 1);
-}
-button:focus {
-  background-color: rgba(33, 150, 243, 1);
-}
-a:hover,
-a:focus {
-  color: rgba(33, 33, 33, 1);
-  color: rgba(33, 150, 243, 1);
-  font-weight: 500;
-}
-strong {
-  color: #212121;
+.large-font {
   font-weight: 700;
-}
-ul.pictures li {
-  color: #757575;
+  color: var(--large-font-color);
   line-height: 2;
-  list-style-type: none;
+}
+.small-font {
+  color: var(--small-font-color);
+  line-height: 1.87;
+}
+button:hover,
+a:hover {
+  background-color: var(--hover-color);
+  color: rgba(255, 255, 255, 1);
+}
+button:focus,
+a:focus {
+  background-color: var(--focus-color);
+  color: rgba(255, 255, 255, 1);
+}
+a {
+  cursor: default;
 }
