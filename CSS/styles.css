@@ -40,6 +40,8 @@ button {
   border: none;
   font-weight: var(--medium-font-weight);
   cursor: pointer;
+  line-height: 1.625;
+  margin-bottom: 8px;
 }
 .brand-pictures {
   list-style: none;
