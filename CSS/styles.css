@@ -2,24 +2,38 @@
   --button-color: rgba(245, 244, 250, 1);
   --hover-color: rgba(33, 150, 243, 1);
   --focus-color: rgba(33, 150, 243, 1);
-  --large-font-color: rgba(33, 33, 33, 1);
-  --small-font-color: rgba(117, 117, 117, 1);
-  --large-font-weight: 700;
-  --medium-font-weight: 500;
+  --font-color-large: rgba(33, 33, 33, 1);
+  --font-color-small: rgba(117, 117, 117, 1);
+  --font-weight-large: 700;
+  --font-weight-medium: 500;
+  --font-weight-small: 400;
+  --font-family-Raleway: Raleway, sans-serif;
 }
 /* header */
+.logo {
+  font-family: var(--font-family-Raleway);
+  letter-spacing: 3%;
+  line-height: 1.19;
+}
 a:link {
   text-decoration: none;
-  color: inherit;
+  font-weight: var(--font-weight-medium);
+  color: var(--font-color-small);
   cursor: default;
+  line-height: 1.14;
+  letter-spacing: 2%;
 }
-.navigation {
-  font-weight: var(--medium-font-weight);
-  color: inherit;
+.navigation,
+a:visited {
+  font-weight: var (--font-weight-medium);
+  font-family: var(--font-family-Roboto);
+  color: var(--font-color-large);
   list-style: none;
+  line-height: 2;
+  letter-spacing: 2%;
 }
 .kontakt {
-  color: var(--small-font-color);
+  color: var(--font-color-small-);
   list-style: none;
 }
 a:hover {
@@ -28,32 +42,38 @@ a:hover {
 a:focus {
   color: var(--focus-color);
 }
+
 /* main */
 body {
   font-family: "roboto", sans-serif;
 }
 .filter {
   list-style: none;
+  font-family: var(--font-family-Roboto);
 }
 button {
   background-color: var(--button-color);
   border: none;
-  font-weight: var(--medium-font-weight);
+  font-weight: var(--font-weight-medium);
   cursor: pointer;
   line-height: 1.625;
   margin-bottom: 8px;
+  letter-spacing: 3%;
 }
 .brand-pictures {
   list-style: none;
 }
 .large-font {
-  font-weight: var(--large-font-weight);
-  color: var(--large-font-color);
+  font-weight: var(--font-weight-large);
+  color: var(--font-color-large);
   line-height: 2;
+  letter-spacing: 6%;
 }
 .small-font {
-  color: var(--small-font-color);
+  color: var(--font-color-small);
+  font-weight: var(--font-weight-small);
   line-height: 1.87;
+  letter-spacing: 3%;
 }
 button:hover {
   background-color: var(--hover-color);
@@ -72,6 +92,10 @@ button:focus {
   list-style: none;
 }
 h2 {
-  font-weight: var(--large-font-weight);
-  color: var(--large-font-color);
+  font-weight: var(--font-weight-large);
+  color: var(--font-color-large);
+}
+address {
+  font-style: normal;
+  line-height: 1.71;
 }
