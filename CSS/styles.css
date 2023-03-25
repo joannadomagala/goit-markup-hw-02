@@ -1,7 +1,7 @@
 :root {
   --button-color: rgba(245, 244, 250, 1);
-  --hover-color: rgba(33, 150, 243, 1);
-  --focus-color: rgba(33, 150, 243, 1);
+  --button-font-size: 16px;
+  --hover-focus-color: rgba(33, 150, 243, 1);
   --font-color-basic: rgba(33, 33, 33, 1);
   --font-color-small: rgba(117, 117, 117, 1);
   --font-color-special: rgba(255, 255, 255, 1);
@@ -21,11 +21,12 @@
 }
 .web {
   font-family: var(--font-family-Logo1);
-  color: var(--focus-color);
+  color: var(--hover-focus-color);
   line-height: 1.17;
   letter-spacing: 0.04875em;
 }
-.studio {
+.studio,
+.studio-footer {
   font-family: var(--font-family-Logo2);
   font-weight: var(--font-weight-small);
   color: var(--font-color-basic);
@@ -34,21 +35,16 @@
   letter-spacing: 0.04875em;
 }
 .studio-footer {
-  font-family: var(--font-family-Logo2);
-  font-weight: var(--font-weight-small);
   color: var(--font-color-special);
-  margin-left: -1px;
-  line-height: 1.17;
-  letter-spacing: 0.04875em;
 }
 /* header */
 .header-portfolio {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
-
 a:link {
   text-decoration: none;
   font-weight: var(--font-weight-medium);
+  font-size: 14px;
   color: var(--font-color-small);
   line-height: 1.14;
   letter-spacing: 0.0175em;
@@ -56,6 +52,7 @@ a:link {
 .navigation,
 a:visited {
   font-weight: var(--font-weight-medium);
+  font-size: 14px;
   color: inherit;
   list-style: none;
   line-height: 2;
@@ -65,14 +62,15 @@ a:visited {
   color: var(--font-color-small);
   list-style: none;
   font-family: inherit;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.0175em;
 }
 a:hover {
-  color: var(--hover-color);
+  color: var(--hover-focus-color);
 }
 a:focus {
-  color: var(--focus-color);
+  color: var(--hover-focus-color);
 }
 
 /* main */
@@ -87,6 +85,7 @@ body {
 button {
   background-color: var(--button-color);
   font-family: inherit;
+  font-size: 16px;
   border: none;
   font-weight: var(--font-weight-medium);
   cursor: pointer;
@@ -97,24 +96,26 @@ button {
 .brand-pictures {
   list-style: none;
 }
-.large-font {
+.font-large {
   font-weight: var(--font-weight-large);
+  font-size: 18px;
   font-family: inherit;
   line-height: 2;
   letter-spacing: 0.03375em;
 }
-.small-font {
-  color: var(--font-color-small);
+.font-small {
+  font-size: 16px;
   font-family: inherit;
+  color: var(--font-color-small);
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
 button:hover {
-  background-color: var(--hover-color);
+  background-color: var(--hover-focus-color);
   color: rgba(255, 255, 255, 1);
 }
 button:focus {
-  background-color: var(--focus-color);
+  background-color: var(--hover-focus-color);
   color: rgba(255, 255, 255, 1);
 }
 
@@ -126,6 +127,7 @@ button:focus {
   align-items: center;
 }
 h1 {
+  font-size: 44px;
   font-family: inherit;
   color: var(--font-color-special);
   font-weight: var(--font-weight-super-large);
@@ -139,19 +141,36 @@ h1 span {
 .home-list {
   list-style: none;
 }
+.list-title {
+  font-size: 14px;
+  font-weight: var(--font-weight-large);
+}
+.list-descr {
+  font-size: 14px;
+  color: var(--font-color-small);
+}
 
 .task-list {
   list-style: none;
+}
+.task-list-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  /* letter-spacing: 0.02625em; */
+  text-align: center;
 }
 .crew {
   background-color: var(--background-color-crew);
   list-style: none;
 }
-h2 {
-  font-weight: var(--font-weight-large);
-  font-family: inherit;
-  letter-spacing: 0.02625em;
+.crew-title {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.16;
+  text-align: center;
 }
+
 .address > ul {
   font-family: inherit;
   font-weight: inherit;
