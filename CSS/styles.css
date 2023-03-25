@@ -4,6 +4,10 @@
   --focus-color: rgba(33, 150, 243, 1);
   --font-color-basic: rgba(33, 33, 33, 1);
   --font-color-small: rgba(117, 117, 117, 1);
+  --font-color-special: rgba(255, 255, 255, 1);
+  --font-color-footer: rgba(255, 255, 255, 0.6);
+  --background-elements-color: rgba(47, 48, 58, 1);
+  --background-color-crew: rgba(245, 244, 250, 1);
   --font-weight-super-large: 900;
   --font-weight-large: 700;
   --font-weight-medium: 500;
@@ -13,10 +17,32 @@
 }
 /* header */
 .logo {
+  font-size: 26px;
+}
+.web {
   font-family: var(--font-family-Logo1);
-  font-weight: var(--font-weight-large);
+  color: var(--focus-color);
   line-height: 1.17;
   letter-spacing: 0.04875em;
+}
+.studio {
+  font-family: var(--font-family-Logo2);
+  font-weight: var(--font-weight-small);
+  color: var(--font-color-basic);
+  margin-left: -1px;
+  line-height: 1.17;
+  letter-spacing: 0.04875em;
+}
+.studio-footer {
+  font-family: var(--font-family-Logo2);
+  font-weight: var(--font-weight-small);
+  color: var(--font-color-special);
+  margin-left: -1px;
+  line-height: 1.17;
+  letter-spacing: 0.04875em;
+}
+header {
+  border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
 a:link {
@@ -92,20 +118,32 @@ button:focus {
 }
 
 /* stylowanie dla index */
+.main-side {
+  background-color: var(--background-elements-color);
+  font-family: inherit;
+  text-align: center;
+  align-items: center;
+}
 h1 {
   font-family: inherit;
+  color: var(--font-color-special);
   font-weight: var(--font-weight-super-large);
-  text-align: center;
   line-height: 1.36;
   letter-spacing: 0.165em;
 }
+h1 span {
+  display: block;
+}
+
 .home-list {
   list-style: none;
 }
+
 .task-list {
   list-style: none;
 }
 .crew {
+  background-color: var(--background-color-crew);
   list-style: none;
 }
 h2 {
@@ -113,9 +151,31 @@ h2 {
   font-family: inherit;
   letter-spacing: 0.02625em;
 }
-address {
+.address > ul {
   font-style: normal;
   font-family: inherit;
+  color: var(--font-color-special);
+  line-height: 1.71;
+  letter-spacing: 0.02625em;
+}
+footer {
+  background-color: var(--background-elements-color);
+  color: var(--font-color-special);
+}
+.kontakt-up {
+  font-weight: var(--font-weight-medium);
+  list-style: none;
+  line-height: 1.71;
+  letter-spacing: 0.02625em;
+}
+.kontakt-down {
+  list-style: none;
+  color: var(--font-color-footer);
+  line-height: 1.71;
+  letter-spacing: 0.02625em;
+}
+.kontakt-footer a {
+  color: var(--font-color-footer);
   line-height: 1.71;
   letter-spacing: 0.02625em;
 }
