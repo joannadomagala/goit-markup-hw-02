@@ -15,7 +15,7 @@
   --font-family-Logo1: Raleway, sans-serif;
   --font-family-Logo2: Oleo Script, sans-serif;
 }
-/* header */
+/* LOGO */
 .logo {
   font-size: 26px;
 }
@@ -41,7 +41,8 @@
   line-height: 1.17;
   letter-spacing: 0.04875em;
 }
-header {
+/* header */
+.header-portfolio {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -152,8 +153,8 @@ h2 {
   letter-spacing: 0.02625em;
 }
 .address > ul {
-  font-style: normal;
   font-family: inherit;
+  font-weight: inherit;
   color: var(--font-color-special);
   line-height: 1.71;
   letter-spacing: 0.02625em;
@@ -176,6 +177,8 @@ footer {
 }
 .kontakt-footer a {
   color: var(--font-color-footer);
+  font-family: inherit;
+  font-weight: inherit;
   line-height: 1.71;
   letter-spacing: 0.02625em;
 }
