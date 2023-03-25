@@ -1,36 +1,29 @@
 :root {
   --button-color: rgba(245, 244, 250, 1);
-  --button-font-size: 16px;
   --hover-focus-color: rgba(33, 150, 243, 1);
   --font-color-basic: rgba(33, 33, 33, 1);
-  --font-color-small: rgba(117, 117, 117, 1);
+  --font-color-describe: rgba(117, 117, 117, 1);
   --font-color-special: rgba(255, 255, 255, 1);
   --font-color-footer: rgba(255, 255, 255, 0.6);
-  --background-elements-color: rgba(47, 48, 58, 1);
+  --background-sides-element-color: rgba(47, 48, 58, 1);
   --background-color-crew: rgba(245, 244, 250, 1);
-  --font-weight-super-large: 900;
-  --font-weight-large: 700;
-  --font-weight-medium: 500;
-  --font-weight-small: 400;
-  --font-family-Logo1: Raleway, sans-serif;
-  --font-family-Logo2: Oleo Script, sans-serif;
 }
 /* LOGO */
 .logo {
   font-size: 26px;
 }
 .web {
-  font-family: var(--font-family-Logo1);
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
   color: var(--hover-focus-color);
   line-height: 1.17;
   letter-spacing: 0.04875em;
 }
 .studio,
 .studio-footer {
-  font-family: var(--font-family-Logo2);
-  font-weight: var(--font-weight-small);
+  font-family: Oleo Script, sans-serif;
+  font-weight: 400;
   color: var(--font-color-basic);
-  margin-left: -1px;
   line-height: 1.17;
   letter-spacing: 0.04875em;
 }
@@ -43,23 +36,21 @@
 }
 a:link {
   text-decoration: none;
-  font-weight: var(--font-weight-medium);
   font-size: 14px;
-  color: var(--font-color-small);
+  font-weight: 500;
+  color: var(--font-color-describe);
   line-height: 1.14;
-  letter-spacing: 0.0175em;
 }
 .navigation,
 a:visited {
-  font-weight: var(--font-weight-medium);
+  font-weight: 500;
   font-size: 14px;
   color: inherit;
   list-style: none;
   line-height: 2;
-  letter-spacing: 0.0175em;
 }
 .kontakt {
-  color: var(--font-color-small);
+  color: var(--font-color-describe);
   list-style: none;
   font-family: inherit;
   font-size: 14px;
@@ -72,7 +63,6 @@ a:hover {
 a:focus {
   color: var(--hover-focus-color);
 }
-
 /* main */
 body {
   font-family: "roboto", sans-serif;
@@ -83,45 +73,41 @@ body {
   font-family: inherit;
 }
 button {
-  background-color: var(--button-color);
-  font-family: inherit;
   font-size: 16px;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: var(--button-color);
   border: none;
-  font-weight: var(--font-weight-medium);
   cursor: pointer;
   line-height: 1.625;
   margin-bottom: 8px;
-  letter-spacing: 0.03em;
 }
 .brand-pictures {
   list-style: none;
 }
 .font-large {
-  font-weight: var(--font-weight-large);
   font-size: 18px;
+  font-weight: 700;
   font-family: inherit;
   line-height: 2;
-  letter-spacing: 0.03375em;
 }
 .font-small {
   font-size: 16px;
   font-family: inherit;
-  color: var(--font-color-small);
+  color: var(--font-color-describe);
   line-height: 1.87;
-  letter-spacing: 0.03em;
 }
 button:hover {
   background-color: var(--hover-focus-color);
-  color: rgba(255, 255, 255, 1);
+  color: var(--font-color-special);
 }
 button:focus {
   background-color: var(--hover-focus-color);
-  color: rgba(255, 255, 255, 1);
+  color: var(--font-color-special);
 }
-
 /* stylowanie dla index */
 .main-side {
-  background-color: var(--background-elements-color);
+  background-color: var(--background-sides-element-color);
   font-family: inherit;
   text-align: center;
   align-items: center;
@@ -130,9 +116,8 @@ h1 {
   font-size: 44px;
   font-family: inherit;
   color: var(--font-color-special);
-  font-weight: var(--font-weight-super-large);
+  font-weight: ;
   line-height: 1.36;
-  letter-spacing: 0.165em;
 }
 h1 span {
   display: block;
@@ -143,11 +128,11 @@ h1 span {
 }
 .list-title {
   font-size: 14px;
-  font-weight: var(--font-weight-large);
+  font-weight: 700;
 }
 .list-descr {
   font-size: 14px;
-  color: var(--font-color-small);
+  color: var(--font-color-describe);
 }
 
 .task-list {
@@ -157,7 +142,6 @@ h1 span {
   font-size: 36px;
   font-weight: 700;
   line-height: 1.16;
-  /* letter-spacing: 0.02625em; */
   text-align: center;
 }
 .crew {
@@ -176,21 +160,20 @@ h1 span {
   font-weight: inherit;
   color: var(--font-color-special);
   line-height: 1.71;
-  letter-spacing: 0.02625em;
 }
 footer {
-  background-color: var(--background-elements-color);
-  color: var(--font-color-special);
+  background-color: var(--background-sides-element-color);
+  color: ;
 }
 .kontakt-up {
-  font-weight: var(--font-weight-medium);
+  font-weight: 500;
   list-style: none;
   line-height: 1.71;
   letter-spacing: 0.02625em;
 }
 .kontakt-down {
   list-style: none;
-  color: var(--font-color-footer);
+  color: ;
   line-height: 1.71;
   letter-spacing: 0.02625em;
 }
