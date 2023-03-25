@@ -12,30 +12,11 @@
   --font-family-Logo2: Oleo Script, sans-serif;
 }
 /* header */
-/* LOGO */
-.web {
+.logo {
   font-family: var(--font-family-Logo1);
   font-weight: var(--font-weight-large);
-  color: var(--focus-color);
-  text-decoration: none;
   line-height: 1.17;
   letter-spacing: 0.04875em;
-}
-
-.studio {
-  font-family: var(--font-family-Logo2);
-  font-weight: var(--font-color-small);
-  line-height: 1.38;
-  letter-spacing: 0.04875em;
-}
-
-.web:hover,
-.web:focus {
-  text-decoration: none;
-}
-.studio:hover,
-.studio:focus {
-  text-decoration: none;
 }
 
 a:link {
