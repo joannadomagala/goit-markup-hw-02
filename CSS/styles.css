@@ -17,7 +17,7 @@
   font-weight: 700;
   color: var(--hover-focus-color);
   line-height: 1.17;
-  letter-spacing: 0.04875em;
+  letter-spacing: 0.78px;
 }
 .studio,
 .studio-footer {
@@ -25,7 +25,7 @@
   font-weight: 400;
   color: var(--font-color-basic);
   line-height: 1.17;
-  letter-spacing: 0.04875em;
+  letter-spacing: 0.78px;
 }
 .studio-footer {
   color: var(--font-color-special);
@@ -36,10 +36,10 @@
 }
 a:link {
   text-decoration: none;
-  font-size: 14px;
   font-weight: 500;
   color: var(--font-color-describe);
-  line-height: 1.14;
+  line-height: 1.17;
+  letter-spacing: 0.28px;
 }
 .navigation,
 a:visited {
@@ -47,7 +47,8 @@ a:visited {
   font-size: 14px;
   color: inherit;
   list-style: none;
-  line-height: 2;
+  line-height: 1.17;
+  letter-spacing: 0.28px;
 }
 .kontakt {
   color: var(--font-color-describe);
@@ -80,22 +81,25 @@ button {
   border: none;
   cursor: pointer;
   line-height: 1.625;
+  letter-spacing: 0.48px;
   margin-bottom: 8px;
 }
 .brand-pictures {
   list-style: none;
 }
-.font-large {
+.brand-task {
   font-size: 18px;
   font-weight: 700;
   font-family: inherit;
   line-height: 2;
+  letter-spacing: 1.08px;
 }
-.font-small {
+.brand-task-descr {
   font-size: 16px;
   font-family: inherit;
   color: var(--font-color-describe);
   line-height: 1.87;
+  letter-spacing: 0.48px;
 }
 button:hover {
   background-color: var(--hover-focus-color);
@@ -116,8 +120,9 @@ h1 {
   font-size: 44px;
   font-family: inherit;
   color: var(--font-color-special);
-  font-weight: ;
+  font-weight: 900;
   line-height: 1.36;
+  letter-spacing: 2.64px;
 }
 h1 span {
   display: block;
@@ -129,10 +134,14 @@ h1 span {
 .list-title {
   font-size: 14px;
   font-weight: 700;
+  line-height: 1.17;
+  letter-spacing: 0.42px;
 }
 .list-descr {
   font-size: 14px;
   color: var(--font-color-describe);
+  line-height: 1.71;
+  letter-spacing: 0.42px;
 }
 
 .task-list {
@@ -141,8 +150,9 @@ h1 span {
 .task-list-title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.16;
   text-align: center;
+  line-height: 1.17;
+  letter-spacing: 1.08px;
 }
 .crew {
   background-color: var(--background-color-crew);
@@ -151,36 +161,52 @@ h1 span {
 .crew-title {
   font-size: 36px;
   font-weight: 700;
-  line-height: 1.16;
   text-align: center;
+  line-height: 1.17;
+  letter-spacing: 1.08px;
 }
-
+.crew-name {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+}
+.crew-position {
+  font-size: 16px;
+  color: var(--font-color-describe);
+  line-height: 1.17;
+  letter-spacing: 0.48px;
+}
 .address > ul {
   font-family: inherit;
   font-weight: inherit;
   color: var(--font-color-special);
   line-height: 1.71;
+  letter-spacing: 0.42px;
 }
 footer {
   background-color: var(--background-sides-element-color);
-  color: ;
+  color: var(--font-color-special);
 }
 .kontakt-up {
+  font-size: 14px;
   font-weight: 500;
   list-style: none;
-  line-height: 1.71;
-  letter-spacing: 0.02625em;
+  line-height: 1.17;
+  letter-spacing: 0.28px;
 }
 .kontakt-down {
+  font-size: 14px;
   list-style: none;
-  color: ;
+  color: var(--font-color-footer);
   line-height: 1.71;
-  letter-spacing: 0.02625em;
+  letter-spacing: 0.42px;
 }
 .kontakt-footer a {
+  font-size: 14px;
   color: var(--font-color-footer);
   font-family: inherit;
   font-weight: inherit;
   line-height: 1.71;
-  letter-spacing: 0.02625em;
+  letter-spacing: 0.42px;
 }
