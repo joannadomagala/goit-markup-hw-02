@@ -198,6 +198,7 @@ footer {
 .kontakt-down {
   font-size: 14px;
   list-style: none;
+  font-style: normal;
   color: var(--font-color-footer);
   line-height: 1.71;
   letter-spacing: 0.42px;
