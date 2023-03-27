@@ -1,4 +1,5 @@
 :root {
+  --logo-web-color: rgba(33, 150, 243, 1);
   --button-color: rgba(245, 244, 250, 1);
   --button-color-main-side: rgba(33, 150, 243, 1);
   --hover-focus-color: rgba(33, 150, 243, 1);
@@ -16,7 +17,7 @@
 .web {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  color: var(--hover-focus-color);
+  color: var(--logo-web-color);
   line-height: 1.17;
   letter-spacing: 0.03em;
 }
