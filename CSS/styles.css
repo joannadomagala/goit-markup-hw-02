@@ -1,5 +1,6 @@
 :root {
   --button-color: rgba(245, 244, 250, 1);
+  --button-color-main-side: rgba(33, 150, 243, 1);
   --hover-focus-color: rgba(33, 150, 243, 1);
   --font-color-basic: rgba(33, 33, 33, 1);
   --font-color-describe: rgba(117, 117, 117, 1);
@@ -73,7 +74,7 @@ body {
   list-style: none;
   font-family: inherit;
 }
-button {
+.button-filter {
   font-size: 16px;
   font-weight: 500;
   font-family: inherit;
@@ -127,6 +128,20 @@ h1 {
 }
 h1 span {
   display: block;
+}
+.button-main-side {
+  background-color: var(--button-color-main-side);
+  color: var(--font-color-special);
+  font-size: 16px;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  line-height: 1.87;
+  letter-spacing: 0.06em;
+  padding-right: 41px;
+  padding-left: 42px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .home-list {
