@@ -107,11 +107,13 @@ body {
   line-height: 1.87;
   letter-spacing: 0.03em;
 }
-button:hover {
+button.button-filter:hover,
+button.button-main-side:hover {
   background-color: var(--hover-focus-color);
   color: var(--font-color-special);
 }
-button:focus {
+button.button-filter:focus,
+button.button-main-side:focus {
   background-color: var(--hover-focus-color);
   color: var(--font-color-special);
 }
@@ -138,6 +140,7 @@ h1 span {
   color: var(--font-color-special);
   font-size: 16px;
   font-weight: 700;
+  cursor: pointer;
   border: none;
   border-radius: 4px;
   line-height: 1.87;
